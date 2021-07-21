@@ -1,0 +1,13 @@
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/bin/Debug/netcoreapp3.1/PostRequest
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/bin/Debug/netcoreapp3.1/PostRequest.deps.json
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/bin/Debug/netcoreapp3.1/PostRequest.runtimeconfig.json
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/bin/Debug/netcoreapp3.1/PostRequest.runtimeconfig.dev.json
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/bin/Debug/netcoreapp3.1/PostRequest.dll
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/bin/Debug/netcoreapp3.1/PostRequest.pdb
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.csprojAssemblyReference.cache
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.AssemblyInfoInputs.cache
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.AssemblyInfo.cs
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.csproj.CoreCompileInputs.cache
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.dll
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.pdb
+/home/matheus/Documentos/Workspace/Studies/C#/PostRequest/obj/Debug/netcoreapp3.1/PostRequest.genruntimeconfig.cache

@@ -2,31 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using RestEase;
 
 namespace PostRequest
 {
-    class IChangeUserState
+    [Header("Authorization", "somethingGoesHere")]
+    [Header("Content-Type", "application/json")]
+    public interface IChangeUserState
     {
-        // public string MakeHttpRequest(List<ChangeUserState> qlqrcoisa)
-        // {
-            
-
-        //     return "something";
-        // }
-        private static readonly HttpClient _httpClient = new HttpClient();
-        
-        public async Task MakePostRequest(List<ChangeUserState> json)
-        {
-            string jsonString = string.Join( ",", json);
-            var stringContent = new StringContent(jsonString);
-
-
-            using var httpResponse = await _httpClient.PostAsync("https://httpbin.org/post", stringContent);
-            httpResponse.EnsureSuccessStatusCode();
-
-            Console.WriteLine(httpResponse.Content);
-
-            Console.WriteLine("hits me");
-        }
+        [Post("https://httpbin.org/post")]
+        // Task<ChangeUserState> makePostRequest([Body] List<ChangeUserState> body);
+        Task<ChangeUserState> makePostRequest([Body] string body);
     }
 }

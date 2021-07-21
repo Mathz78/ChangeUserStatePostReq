@@ -1,37 +1,36 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Net.Http;
+using Newtonsoft.Json;
+using RestEase;
 
 namespace PostRequest
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Testing a Post Request!");
-
-
-
             List<ChangeUserState> body = new List<ChangeUserState>
             {
                 new ChangeUserState {
                     id = Guid.NewGuid(), 
                     to = "postmaster@msging.net", 
                     method = "set", 
-                    uri = "/contexts/{{user-identity}}/stateid@{{flow-identifier}}",
+                    uri = "/contexts/testing/stateid@someiD",
                     type = "text/plain",
                     resource = "{{state-id}}"
                 }
             };
 
-            // string combindedString = string.Join( ",", requestOne);
- 
-            // Console.WriteLine(combindedString.GetType());
+            IChangeUserState api = RestClient.For<IChangeUserState>("https://httpbin.org/");
+            var something = api.makePostRequest("https://httpbin.org/");
+            ChangeUserState result = api.makePostRequest("https://httpbin.org/").Result;
+        
+            // Console.WriteLine(something);
 
-            IChangeUserState request = new IChangeUserState();
+            // Console.WriteLine(api.Result);
 
-            Console.WriteLine(request.MakePostRequest(body));
-
+            Console.WriteLine("koe");
             Console.ReadLine();
         }
     }

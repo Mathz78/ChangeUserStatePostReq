@@ -2,7 +2,7 @@ using System;
 
 namespace PostRequest
 {
-    class ChangeUserState
+    public class ChangeUserState
     {
         public Guid id { get; set; }
 
@@ -15,6 +15,8 @@ namespace PostRequest
         public string type { get; set; }
         
         public string  resource { get; set; }
+
+
 
     }
 }

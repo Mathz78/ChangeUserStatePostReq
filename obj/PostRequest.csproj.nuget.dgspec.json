@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "RestEase": {
+              "target": "Package",
+              "version": "[1.5.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

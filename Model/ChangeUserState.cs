@@ -1,6 +1,6 @@
 using System;
 
-namespace PostRequest
+namespace PostRequest.Model
 {
     public class ChangeUserState
     {
@@ -15,8 +15,5 @@ namespace PostRequest
         public string type { get; set; }
         
         public string  resource { get; set; }
-
-
-
     }
 }

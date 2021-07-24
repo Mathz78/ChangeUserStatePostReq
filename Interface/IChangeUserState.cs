@@ -2,16 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using PostRequest.Model;
 using RestEase;
 
-namespace PostRequest
+namespace PostRequest.Interface
 {
-    [Header("Authorization", "somethingGoesHere")]
+    [Header("Authorization", "{{yourKey}}")]
     [Header("Content-Type", "application/json")]
     public interface IChangeUserState
     {
-        [Post("https://httpbin.org/post")]
+        [Post("commands")]
         // Task<ChangeUserState> makePostRequest([Body] List<ChangeUserState> body);
-        Task<ChangeUserState> makePostRequest([Body] string body);
+        Task<IChangeUserStateResponse> makePostRequest([Body] ChangeUserState body);
     }
 }

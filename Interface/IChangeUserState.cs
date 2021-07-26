@@ -12,7 +12,6 @@ namespace PostRequest.Interface
     public interface IChangeUserState
     {
         [Post("commands")]
-        // Task<ChangeUserState> makePostRequest([Body] List<ChangeUserState> body);
         Task<IChangeUserStateResponse> makePostRequest([Body] ChangeUserState body);
     }
 }
